@@ -60,10 +60,10 @@ The above migration file contains two lines which are very important:
 </ul>
 
 **5. Running a program**<br>
-When you properly configured your application, liquibase read your migration file (or files) and will create in your database two tables (excluding your tables):
+When you properly configured your application, liquibase read your migration file (or files) and will create in your database two tables (excluding your tables or other database stuff):
 <ul>
     <li>databasechangelog</li>
     <li>databasechangeloglock</li>
 </ul>
-The first table is containing every change what you defined in your migration file (or files) with datetime of execution, author of changset, order of execute, type of migration file (in this example we perform sql migration) and many more data
+The first table is containing every change what you defined in your migration file (or files) with datetime of execution, author of changset, order of execute, type of migration file (in this example we perform sql migration) and many more data.<br>
 The second one contain information about lock changset. If locked filed is set to true, application cannot run because liqibase cannot do everything. 
