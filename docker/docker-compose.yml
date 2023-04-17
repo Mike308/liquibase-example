@@ -1,0 +1,16 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    container_name: postgres-db
+    environment:
+      POSTGRES_PASSWORD: ye*if35X8yDA
+    volumes:
+      - "./postgres.conf:/usr/local/etc/postgres/postgres.conf"
+    command: "postgres -c config_file=/usr/local/etc/postgres/postgres.conf"
+    ports:
+      - "5433:5433"
