@@ -66,4 +66,4 @@ When you properly configured your application, liquibase read your migration fil
     <li>databasechangeloglock</li>
 </ul>
 The first table is containing every change what you defined in your migration file (or files) with datetime of execution, author of changset, order of execute, type of migration file (in this example we perform sql migration) and many more data.<br>
-The second one contain information about lock changset. If locked filed is set to true, application cannot run because liqibase cannot do everything. 
+The second one contain information about lock changset. If locked filed is set to true, application doesn't start. 
