@@ -1,5 +1,7 @@
+**LIQUIBASE SQL**<br>
+
 **1. Project Setup**<br>
-When you starting setup project, you have to check this:
+When you are starting setup project, you have to check this:
 ![](pictures/img.png)
 <br>
 **2. Create db-changelog.xml**<br>
